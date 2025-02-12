@@ -36,14 +36,12 @@ images.forEach(image => {
   imageEl = document.createElement("img");
   imageEl.src = image.url;
   imageEl.alt = image.alt;
-  liEl.append(imageEl)
-    liEl.classList.add("li-image");
-    imageEl.classList.add("image");
-
+  liEl.classList.add("li-image");
+  imageEl.classList.add("image");
   imgUl.classList.add("images");
-  imgUl.append(liEl);
-});
+  imgUl.append(liEl, imageEl);
 
+});
 // document.createElement()
 // element.append(el)
 // Ти можеш створити й додати HTML-елементи, використовуючи document.createElement() і elem.append() або шаблонні рядки і elem.insertAdjacentHTML().

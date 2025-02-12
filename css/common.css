@@ -19,13 +19,12 @@ body {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+        
 }
 .li-image{
-      flex: 1 1 calc(33.33% - 10px);
-      max-width: calc(33.33% - 10px);
+      max-width: 1129px;
 }
 .image{
   padding: 12px;
-max-width: 100%;
-}
+max-width: 360px;}
 /* end of task2 css */
