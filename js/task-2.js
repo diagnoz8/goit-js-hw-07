@@ -24,3 +24,36 @@ const images = [
     alt: "Lighthouse Coast Sea",
   }
 ];
+
+// Напиши скрипт для створення галереї зображень на основі масиву даних. HTML містить список
+// Використовуй масив об'єктів images для створення елементів <img>, вкладених в <li>.
+let imgUl = document.querySelector(".gallery")
+let imageEl;
+let liEl;
+images.forEach(image => {
+  
+  liEl = document.createElement("li") 
+  imageEl = document.createElement("img");
+  imageEl.src = image.url;
+  imageEl.alt = image.alt;
+  liEl.append(imageEl)
+    liEl.classList.add("li-image");
+    imageEl.classList.add("image");
+
+  imgUl.classList.add("images");
+  imgUl.append(liEl);
+});
+
+// document.createElement()
+// element.append(el)
+// Ти можеш створити й додати HTML-елементи, використовуючи document.createElement() і elem.append() або шаблонні рядки і elem.insertAdjacentHTML().
+
+// Усі елементи галереї повинні додаватися в DOM за одну операцію додавання.
+// Додай мінімальне оформлення галереї флексбоксами через CSS класи.
+// На що буде звертати увагу ментор при перевірці:
+
+// Створена й додана в DOM галерея із шести зображень
+// Галерея додана у список ul.gallery і являє собою 6 елементів <li>, в які вкладені елементи <img>
+// Для створення елементів <img> використані дані з масиву об’єктів images
+// Усі елементи галереї додані в DOM за одну операцію додавання
+// Є мінімальне оформлення галереї флексбоксами через CSS класи
