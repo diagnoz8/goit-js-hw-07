@@ -37,17 +37,20 @@ userForm.addEventListener("submit", (evt) => {
         (userEmail === "" || userPassword === "")
     {
         alert("All form fields must be filled in") 
-        
+        return;
     }
     
     else
     {
         userData[userEmailKey] = userEmail;
         userData[userPasswordKey] = userPassword;
-        console.log(userData);
-        userForm.reset();
     }
+          console.log(userData);
+    userForm.reset();  
+     userEmail = "";
+    userPassword = "";
 })
+
 // Під час відправлення форми сторінка не повинна перезавантажуватися.
 
 // Якщо при сабміті у формі є незаповнені поля, виводь alert з попередженням про те, що 'All form fields must be filled in'. Не додавай на інпути атрибут required, валідація має відбуватися саме через JS.
