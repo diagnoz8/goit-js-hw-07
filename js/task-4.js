@@ -15,22 +15,37 @@ let userEmail = "";
 let userPassword = "";
 
 userForm.addEventListener("input", (evt) => { 
-    if (evt.target.type === "email") {
-        userEmail = evt.target.value.trim();
-    } else if (evt.target.type === "password") {
-        userPassword = evt.target.value.trim();
+    if
+        (evt.target.type === "email")
+    {
+        userEmail = evt.target.value.trim(); 
+        
     }
+    
+    else if
+        (evt.target.type === "password")
+    {
+        userPassword = evt.target.value.trim(); 
+        
+    }
+    
 });
 userForm.addEventListener("submit", (evt) => {
     evt.preventDefault();
-if (userEmail === "" || userPassword === "") {
-    alert("All form fields must be filled in")
-}
-else {
-    userData[userEmailKey] = userEmail;
-    userData[userPasswordKey] = userPassword;
-    console.log(userData);
+
+    if
+        (userEmail === "" || userPassword === "")
+    {
+        alert("All form fields must be filled in") 
+        
+    }
     
+    else
+    {
+        userData[userEmailKey] = userEmail;
+        userData[userPasswordKey] = userPassword;
+        console.log(userData);
+        userForm.reset();
     }
 })
 // Під час відправлення форми сторінка не повинна перезавантажуватися.
