@@ -6,17 +6,20 @@
 
 
 let btn = document.querySelector(".change-color");
-let elToColor = document.querySelector(".color");
-let body = document.querySelector("body")
+let elToColor = document.querySelector(".color"); 
+let body = document.querySelector("body") 
 
-btn.addEventListener("click", getRandomHexColor);
+btn.addEventListener("click", setRandomHexColor); 
 
-function getRandomHexColor() {
-  let colour = `#${Math.floor(Math.random() * 16777215)
+function getRandomHexColor() {  
+  return `#${Math.floor(Math.random() * 16777215)
     .toString(16)
     .padStart(6, 0)}`;
-  elToColor.style.backgroundColor = colour;
- body.style.backgroundColor =colour;
+}
+function setRandomHexColor() {
+ let colour = getRandomHexColor();
+  elToColor.textContent = colour;
+  body.style.backgroundColor =colour; 
 }
 // На що буде звертати увагу ментор при перевірці:
 

@@ -25,9 +25,9 @@ const createCollection = () => {
 
      for (let index = 0; index < divQuantity; index++) {
        const div = document.createElement("div");
-  div.style.width = `${size}px`; 
-  div.style.height = `${size}px`;
-  div.style.backgroundColor = getRandomHexColor();
+    div.style.width = `${size}px`; 
+    div.style.height = `${size}px`;
+    div.style.backgroundColor = getRandomHexColor();
        collection.append(div);
        size += 10;
      }
