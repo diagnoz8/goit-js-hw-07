@@ -10,7 +10,7 @@ const createBtn  = controls.querySelector("button[data-create]")
 const destroyBtn = controls.querySelector("button[data-destroy]")
 const inputEl = controls.querySelector("input")
 const collection = document.querySelector("#boxes");
-
+const divArr = [];
 let divQuantity = 0;
 
  const getInputValue = (evt) => divQuantity = Number(evt.target.value);
@@ -19,8 +19,9 @@ let divQuantity = 0;
  
 const createCollection = () => {
     collection.innerHTML = "";
-
+  divArr.length = 0;
   if (divQuantity >= 1 && divQuantity <= 100) {
+
        let size = 30;
 
      for (let index = 0; index < divQuantity; index++) {
@@ -28,10 +29,10 @@ const createCollection = () => {
     div.style.width = `${size}px`; 
     div.style.height = `${size}px`;
     div.style.backgroundColor = getRandomHexColor();
-       collection.append(div);
+       divArr.push(div);
        size += 10;
      }
-       
+       collection.append(...divArr);
      inputEl.value = "";
      divQuantity = 0;
    }
