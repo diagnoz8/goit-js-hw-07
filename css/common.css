@@ -55,6 +55,8 @@ body {
 }
 
 .image{
+  object-fit: cover;
+  height: 300px;
   padding: 12px;
 max-width: 360px;}
 /* end of task2 css */
