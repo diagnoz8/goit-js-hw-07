@@ -80,3 +80,36 @@ line-height: 24px;
 }
 
 /* task 4 */
+.login-form{
+  display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+        gap: 16px;
+}
+.login-form > :nth-child(1), .login-form> :nth-child(2){
+  display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 360px;
+    gap: 8px;
+}
+.login-form> :nth-child(1) > input,
+.login-form> :nth-child(2) > input{
+height: 40px;
+}
+
+.login-form > button {
+  height: 40px;
+  max-width: 86px;
+  background-color: #4E75FF;
+  color: #FFFFFF;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 8px 16px 8px 16px;
+  border-radius: 8px;
+  border-style: none;
+}
+.login-form > button:hover {
+      background: #6C8CFF;
+    }
