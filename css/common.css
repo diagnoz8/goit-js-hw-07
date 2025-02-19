@@ -67,3 +67,16 @@ input{
         border-style: solid;
 }
 /* task 3 css */
+body > h1{
+  font-weight: 600;
+}
+#name-input{
+  padding: 8px 0px 8px 16px;
+  height: 40px;
+  width: 360px;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+}
+
+/* task 4 */
