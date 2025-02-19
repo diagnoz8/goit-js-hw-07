@@ -113,3 +113,37 @@ height: 40px;
 .login-form > button:hover {
       background: #6C8CFF;
     }
+
+    /* task 5 */
+    .widget{
+      display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-self: center;
+        width: 169px;
+        gap: 16px;
+        justify-content: center;
+    }
+        .widget > p {
+          font-weight: 400;
+          margin: 0;
+          letter-spacing: 0.64px;
+          width: fit-content;    
+   }
+    .change-color {
+          height: 40px;
+          max-width: 148px;
+          background-color: #4E75FF;
+          color: #FFFFFF;
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 24px;
+          padding: 8px 16px 8px 16px;
+          border-radius: 8px;
+          border-style: none;
+          margin-left: 10.5px;
+        }
+    
+.change-color {
+          background: #6C8CFF;
+        }
